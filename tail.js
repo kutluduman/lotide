@@ -13,9 +13,9 @@ const assertEqual = (actual, expected) => {
 
 const tail = (arr) => {
 
-arr.shift();
+  arr.shift();
 
-return arr;
+  return arr;
 
 
 
