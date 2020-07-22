@@ -1,13 +1,9 @@
-
-let success = "✅✅✅Assertion passed";
-let failure = "🛑🛑🛑Assertion failed";
-
 const assertEqual = (actual, expected) => {
 
   if (actual === expected) {
-    console.log(`${success}`);
+    console.log("✅✅✅Assertion passed");
   } else {
-    console.log(`${failure}`);
+    console.log("🛑🛑🛑Assertion failed");
   }
 };
 
