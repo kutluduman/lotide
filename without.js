@@ -21,7 +21,7 @@ const eqArrays = (actualArray,expectedArray) => {
   return false;
  
  
- }
+ };
  
  const assertArraysEqual = (value) => {
 
@@ -34,7 +34,7 @@ const eqArrays = (actualArray,expectedArray) => {
     console.log("Arrays are not equal");
   }
 
- }
+ };
 
 
  const without = (source, itemsToRemove) => {
@@ -57,10 +57,10 @@ const eqArrays = (actualArray,expectedArray) => {
     return source ;
   
 
- }
+ };
 
  assertArraysEqual((without([1, 2, 3], [1])), [2, 3]);
- assertArraysEqual((without(["1", "2", "3"], [1, 2, "3"])),["1", "2"]);
+ 
 
  const words = ["hello", "world", "lighthouse"];
  without(words, ["lighthouse"]); // no need to capture return value for this test case

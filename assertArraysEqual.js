@@ -21,7 +21,7 @@ const eqArrays = (actualArray,expectedArray) => {
   return false;
  
  
- }
+ };
 
 
  const assertArraysEqual = (value) => {
@@ -35,6 +35,6 @@ const eqArrays = (actualArray,expectedArray) => {
     console.log("Arrays are not equal");
   }
 
- }
+ };
 
  assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]));

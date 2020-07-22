@@ -35,6 +35,6 @@ const eqArrays = (actualArray,expectedArray) => {
  return false;
 
 
-}
+};
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true);
