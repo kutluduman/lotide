@@ -15,19 +15,19 @@ const assertEqual = (actual, expected) => {
 // itemsToCount: an object specifying what to count
 const countOnly = (allItems, itemsToCount) => {
 
-  let result = {};
+  let results = {};
 
   for(let item of allItems){
     if(itemsToCount[item]){
-      if (result[item]) {
-        result[item] += 1;
+      if (results[item]) {
+        results[item] += 1;
     } else {
-      result[item] = 1;
+      results[item] = 1;
     }
   }
 }
 
-return result;
+return results;
 
 };
 
