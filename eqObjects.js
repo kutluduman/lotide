@@ -7,16 +7,25 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
+const eqArrays = (actualArray,expectedArray) => {
+
+  if(actualArray.length !== expectedArray.length) {
     return false;
   }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
+ 
+  for (let i = 0; i < actualArray.length; i++) {
+ 
+ for(let j = 0 ; j < expectedArray.length ; j++) {
+
+  if (actualArray[i] !== expectedArray[i]) {
+    return false;
+      }
+
     }
+     
   }
-  return true;
+ return true;
+  
 };
 
 // Returns true if both objects have identical keys with identical values.
