@@ -2,45 +2,45 @@ const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 
 const eqArrays = (actualArray,expectedArray) => {
 
-  if(actualArray.length !== expectedArray.length) {
+  if (actualArray.length !== expectedArray.length) {
     return false;
   }
  
   for (let i = 0; i < actualArray.length; i++) {
  
- for(let j = 0 ; j < expectedArray.length ; j++) {
+    for (let j = 0; j < expectedArray.length; j++) {
 
-  if (actualArray[i] !== expectedArray[i]) {
-    return false;
+      if (actualArray[i] !== expectedArray[i]) {
+        return false;
       }
 
     }
      
   }
- return true;
+  return true;
   
 };
 
 
 const assertArraysEqual = (arr1, arr2) => {
 
- if(eqArrays(arr1, arr2) === false) {
+  if (eqArrays(arr1, arr2) === false) {
 
     console.log('🛑Failed : Arrays are not equal');
 
- } 
+  }
 
-   console.log('✅ Success : Arrays are equal');
+  console.log('✅ Success : Arrays are equal');
  
 
 };
 
 const takeUntil = (array, predicate) => {
   const output = [];
-  for(let each of array) {
-  if(predicate(each)) {
-    return output;
-  }
+  for (let each of array) {
+    if (predicate(each)) {
+      return output;
+    }
 
     output.push(each);
   }

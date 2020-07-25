@@ -10,17 +10,17 @@ const assertEqual = (actual, expected) => {
 
 
 const countLetters = (str) => {
-let newStr = str.split(' ').join('');
-let count = {};
-for(let character of newStr){
-  if(count[character]) {
-    count[character]+=1
-  } else {
-    count[character]=1;
+  let newStr = str.split(' ').join('');
+  let count = {};
+  for (let character of newStr) {
+    if (count[character]) {
+      count[character] += 1;
+    } else {
+      count[character] = 1;
+    }
   }
-}
 
-return count;
+  return count;
 
 };
 

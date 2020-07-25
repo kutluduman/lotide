@@ -11,7 +11,7 @@ const assertEqual = (actual, expected) => {
 
 const head = (arr) => {
 
-return arr[0];
+  return arr[0];
 
 };
 

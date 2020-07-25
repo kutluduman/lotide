@@ -8,13 +8,13 @@ const assertEqual = (actual, expected) => {
 };
 
 const findKey = (object,value) => {
-  for(let eachKey in object){
-    if(value(object[eachKey])){
+  for (let eachKey in object) {
+    if (value(object[eachKey])) {
       return eachKey;
     }
   }
 
-}
+};
 
 const objects = {
   "Blue Hill": { stars: 1 },

@@ -9,22 +9,22 @@ const assertEqual = (actual, expected) => {
 
 const eqArrays = (actualArray,expectedArray) => {
 
-  if(actualArray.length !== expectedArray.length) {
+  if (actualArray.length !== expectedArray.length) {
     return false;
   }
  
   for (let i = 0; i < actualArray.length; i++) {
  
- for(let j = 0 ; j < expectedArray.length ; j++) {
+    for (let j = 0; j < expectedArray.length; j++) {
 
-  if (actualArray[i] !== expectedArray[i]) {
-    return false;
+      if (actualArray[i] !== expectedArray[i]) {
+        return false;
       }
 
     }
      
   }
- return true;
+  return true;
   
 };
 
@@ -33,17 +33,17 @@ const eqArrays = (actualArray,expectedArray) => {
 const eqObjects = function(object1, object2) {
   const object1Key = Object.keys(object1);
   const object2Key = Object.keys(object2);
-  if(object1Key.length !== object2Key.length) {
+  if (object1Key.length !== object2Key.length) {
     return false;
-  } 
-  for(const value of object1Key){
-    if(Array.isArray(object1[value]) && Array.isArray(object2[value])) {
-      if(! eqArrays(object1[value],object2[value])){
+  }
+  for (const value of object1Key) {
+    if (Array.isArray(object1[value]) && Array.isArray(object2[value])) {
+      if (! eqArrays(object1[value],object2[value])) {
         return false;
       }
     } else {
-      if(object1[value] !== object2[value]){
-        return false
+      if (object1[value] !== object2[value]) {
+        return false;
       }
     }
   }
