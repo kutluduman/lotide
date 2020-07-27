@@ -1,11 +1,9 @@
 const eqArrays = require('./eqArrays');
- 
-const assertArraysEqual = require('./assertArraysEqual');
+ const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = (arr) => {
 
   let arrMiddle = [];
-
   let indexMiddle = Math.floor(arr.length / 2);
 
   if (arr.length <= 2) {
@@ -14,7 +12,7 @@ const middle = (arr) => {
     arrMiddle.push(arr[(indexMiddle) - 1]);
     arrMiddle.push(arr[indexMiddle]);
   } else {
-    arrMiddle.push(indexMiddle);
+    arrMiddle.push(arr[indexMiddle]);
   }
 
   return arrMiddle;
