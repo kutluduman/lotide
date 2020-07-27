@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@kutluduman/lotide",
   "version": "1.0.0",
   "description": "",
   "main": "assertArraysEqual.js",
@@ -12,9 +12,16 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kutluduman/lotide.git"
+  }, 
+  "author": { 
+  "name" : "Julia Jachimowicz",
+  "email" : "juliaj621@gmail.com",
+  "url" : "https://github.com/juliaj621"
   },
-  "keywords": [],
-  "author": "",
+  "contributors": [{ "name" : "Kutluhan Duman",
+  "email" : "kutluduman@gmail.com",
+  "url" : "https://github.com/kutluduman"
+  }],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kutluduman/lotide/issues"
