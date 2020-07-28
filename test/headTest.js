@@ -1,4 +1,5 @@
-const mocha = require('chai').assert;
+const mocha = require('chai');
+const assert = mocha.assert;
 const head = require('../head');
 
 describe('head', () => {
